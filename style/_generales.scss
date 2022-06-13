@@ -1,0 +1,387 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&family=Titillium+Web:wght@200&display=swap');
+
+/*desktop*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    background-color: $a;
+    padding: 1em 0em 1em 0em;
+    border: 0em 1em 1em 1em;
+    background-image: linear-gradient(to bottom, $a, $b);
+}
+
+picture img {
+    height: 6em;
+}
+
+aside {
+    display: flex;
+    background-color: $a;
+    flex-direction: column;
+}
+
+body {
+    text-align: center;
+    background-color: #f2f2f2;
+
+}
+
+main {
+    width: 85%;
+}
+
+footer {
+    background-color: $a;
+    padding: 0.5em 0em 0.5em 0em;
+    margin-top: 2em;
+    text-align: center;
+    background-image: linear-gradient(to bottom, $b, $a);
+
+    p {
+        color: $c;
+    }
+}
+
+li {
+    list-style-type: none;
+
+    a {
+        font-size: 2em;
+    }
+}
+
+div a {
+    font-size: 1.5em;
+    margin: 1em 0em 1em 0em;
+}
+
+h1 {
+    font-size: 2em;
+    color: $c;
+    display: flex;
+    align-items: baseline;
+}
+
+h2 {
+    font-size: 3em;
+    color: $a;
+    margin: 0em 0em 1em 0em;
+}
+
+h3 {
+    font-size: 3em;
+    color: $a;
+}
+
+p {
+    font-size: 2em;
+    color: $a;
+    margin: 1em 10em 1em 10em;
+}
+
+figure {
+    background-color: #d6d6d6;
+    padding: 4em 0 4em 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+
+    img {
+        height: $z;
+        width: $z;
+        background-color: #f2f2f2;
+    }
+}
+
+figcaption {
+    font-size: 2em;
+    color: $c;
+    margin: 1em 1em 1em 1em;
+    padding: 1em;
+    width: 15em;
+}
+
+.pos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carrusel {
+    background-color: #d6d6d6;
+}
+
+.contactenos-aside {
+    background-image: url(../multimedia/jesus-bailando.gif);
+    background-repeat: y-repeat;
+    background-size: contain;
+    width: 15%;
+    margin: 0;
+}
+
+.boton {
+    text-decoration: none;
+    color: $a;
+    border-style: solid;
+    border-radius: 1em;
+    padding: 0.3em;
+    border-color: $a;
+
+    &:hover {
+        text-decoration: none;
+        color: $a;
+        border-style: solid;
+        border-radius: 1em;
+        padding: 0.3em;
+        border-color: $c;
+        background-color: $d;
+    }
+}
+
+iframe {
+    width: 50em;
+    height: 25em;
+    margin: 1em 0 1em 0;
+}
+
+article {
+    background-color: $a;
+    padding: 4em 2em 10em 2em;
+    margin: 2em;
+    border-radius: 3em;
+}
+
+label {
+    font-size: 1em;
+}
+
+form div {
+    font-size: 1.5em;
+}
+
+/*tablet*/
+
+@media(max-width:991px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-areas:
+            "header section"
+            "header aside"
+            "header footer";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 95% 5% 10em;
+    }
+
+    header {
+        grid-area: header;
+        background-color: $a;
+
+        nav {
+            background-image: linear-gradient(to bottom, $b, $b);
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin: 1em 0 2em 0;
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+    picture img {
+        height: 10em;
+        width: 10em;
+    }
+
+    main {
+        width: 92%;
+        grid-area: section;
+        margin-top: 1em;
+        align-items: center;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    aside {
+        grid-area: aside;
+
+        div {
+            width: 100%;
+            height: 15em;
+        }
+    }
+
+    iframe {
+        max-height: 50%;
+        max-width: 50%;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        background-image: linear-gradient(to bottom, $a, $a);
+        grid-area: footer;
+        text-align: center;
+        padding: 2em 0 0 0;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .botonAbajo {
+        margin-bottom: 2em;
+    }
+
+    iframe {
+        margin-bottom: 1em;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    article {
+        margin-left: 8em;
+        max-width: 60%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactenos-aside {
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .carrusel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boton {
+        text-decoration: none;
+        color: $a;
+        border-style: none;
+        border-radius: 1em;
+        padding: 0.3em;
+        border-color: $a;
+
+        &:hover {
+            text-decoration: none;
+            color: $a;
+            border-style: none;
+            border-radius: 1em;
+            padding: 0.3em;
+            border-color: $c;
+            background-color: $d;
+        }
+    }
+
+}
+
+/*mobile*/
+
+@media (max-width:640px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 70%;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    article {
+        margin: 20%;
+    }
+
+    figure {
+        width: 95%;
+    }
+
+    figcaption {
+        height: 100%;
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .carrusel {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}

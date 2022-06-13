@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&family=Titillium+Web:wght@200&display=swap");
+/*desktop*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Nunito', sans-serif;
+}
+
+nav {
+  background-color: #083359;
+  padding: 1em 0em 1em 0em;
+  border: 0em 1em 1em 1em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#083359), to(#6cc5d9));
+  background-image: linear-gradient(to bottom, #083359, #6cc5d9);
+}
+
+picture img {
+  height: 6em;
+}
+
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #083359;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+main {
+  width: 85%;
+}
+
+footer {
+  background-color: #083359;
+  padding: 0.5em 0em 0.5em 0em;
+  margin-top: 2em;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6cc5d9), to(#083359));
+  background-image: linear-gradient(to bottom, #6cc5d9, #083359);
+}
+
+footer p {
+  color: #86a641;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  font-size: 2em;
+}
+
+div a {
+  font-size: 1.5em;
+  margin: 1em 0em 1em 0em;
+}
+
+h1 {
+  font-size: 2em;
+  color: #86a641;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+h2 {
+  font-size: 3em;
+  color: #083359;
+  margin: 0em 0em 1em 0em;
+}
+
+h3 {
+  font-size: 3em;
+  color: #083359;
+}
+
+p {
+  font-size: 2em;
+  color: #083359;
+  margin: 1em 10em 1em 10em;
+}
+
+figure {
+  background-color: #d6d6d6;
+  padding: 4em 0 4em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+figure img {
+  height: 25em;
+  width: 25em;
+  background-color: #f2f2f2;
+}
+
+figcaption {
+  font-size: 2em;
+  color: #86a641;
+  margin: 1em 1em 1em 1em;
+  padding: 1em;
+  width: 15em;
+}
+
+.pos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.carrusel {
+  background-color: #d6d6d6;
+}
+
+.contactenos-aside {
+  background-image: url(../multimedia/jesus-bailando.gif);
+  background-repeat: y-repeat;
+  background-size: contain;
+  width: 15%;
+  margin: 0;
+}
+
+.boton {
+  text-decoration: none;
+  color: #083359;
+  border-style: solid;
+  border-radius: 1em;
+  padding: 0.3em;
+  border-color: #083359;
+}
+
+.boton:hover {
+  text-decoration: none;
+  color: #083359;
+  border-style: solid;
+  border-radius: 1em;
+  padding: 0.3em;
+  border-color: #86a641;
+  background-color: #3f8d3f;
+}
+
+iframe {
+  width: 50em;
+  height: 25em;
+  margin: 1em 0 1em 0;
+}
+
+article {
+  background-color: #083359;
+  padding: 4em 2em 10em 2em;
+  margin: 2em;
+  border-radius: 3em;
+}
+
+label {
+  font-size: 1em;
+}
+
+form div {
+  font-size: 1.5em;
+}
+
+/*tablet*/
+@media (max-width: 991px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header section" "header aside" "header footer";
+    -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
+    -ms-grid-rows: 95% 5% 10em;
+        grid-template-rows: 95% 5% 10em;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: header;
+    background-color: #083359;
+  }
+  header nav {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6cc5d9), to(#6cc5d9));
+    background-image: linear-gradient(to bottom, #6cc5d9, #6cc5d9);
+  }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li {
+    margin: 1em 0 2em 0;
+    list-style-type: none;
+  }
+  picture img {
+    height: 10em;
+    width: 10em;
+  }
+  main {
+    width: 92%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: section;
+    margin-top: 1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section {
+    width: 100%;
+  }
+  aside {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: aside;
+  }
+  aside div {
+    width: 100%;
+    height: 15em;
+  }
+  iframe {
+    max-height: 50%;
+    max-width: 50%;
+  }
+  figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#083359), to(#083359));
+    background-image: linear-gradient(to bottom, #083359, #083359);
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: footer;
+    text-align: center;
+    padding: 2em 0 0 0;
+  }
+  img {
+    width: 50%;
+  }
+  .botonAbajo {
+    margin-bottom: 2em;
+  }
+  iframe {
+    margin-bottom: 1em;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  article {
+    margin-left: 8em;
+    max-width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactenos-aside {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .carrusel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boton {
+    text-decoration: none;
+    color: #083359;
+    border-style: none;
+    border-radius: 1em;
+    padding: 0.3em;
+    border-color: #083359;
+  }
+  .boton:hover {
+    text-decoration: none;
+    color: #083359;
+    border-style: none;
+    border-radius: 1em;
+    padding: 0.3em;
+    border-color: #86a641;
+    background-color: #3f8d3f;
+  }
+}
+
+/*mobile*/
+@media (max-width: 640px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    font-size: 70%;
+    width: 100%;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  section {
+    width: 95%;
+  }
+  article {
+    margin: 20%;
+  }
+  figure {
+    width: 95%;
+  }
+  figcaption {
+    height: 100%;
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    padding: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  .carrusel {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+/*desktop*/
+.section1 {
+  padding: 1em 1em 1em 1em;
+}
+
+.section2 {
+  padding: 1em 1em 1em 1em;
+}
+
+.section3 {
+  padding: 1em 1em 1em 1em;
+}
+
+.section4 {
+  padding: 1em 1em 1em 1em;
+}
+
+.medicamento {
+  padding: 1em 1em 1em 1em;
+  height: 16em;
+}
+
+@media (max-width: 640px) {
+  .medicamento {
+    height: 100%;
+    width: 100%;
+  }
+}
